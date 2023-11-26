@@ -1,0 +1,119 @@
+body {
+    /* Ваши стили */
+    background: linear-gradient(-45deg,
+      #fcc1ff, /* Первый цвет */
+      #b4b4ff, /* Второй цвет */
+      #ffb4f8, /* Третий цвет */
+      #c9fff3 /* Четвертый цвет */
+    );
+    background-size: 400% 400%;
+    animation: gradient 45s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+
+100% {
+    background-position: 0% 50%;
+}
+}
+
+.main {
+    position: absolute;
+    background-color: white;
+    border-radius: 4px;
+    width: 350px;
+    height: 530px;
+    top: 50%;
+    left: 50%;
+    margin-top: -265px;
+    margin-left: -175px;
+}
+
+.avatar {
+    position: absolute;
+    border-radius: 3px;
+    left: 50%;
+    margin-left: -50px;
+    padding-top: 10%;
+    border-radius: 10px;
+}
+
+.name {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    margin-top: 40%;
+}
+
+.lore {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    top: 60%;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+  
+a:link {
+    color: #265301;
+}
+  
+a:visited {
+    color: #437A16;
+}
+  
+a:focus {
+    border-bottom: 1px solid;
+    background: #BAE498;
+}
+  
+a:hover {
+    border-bottom: 1px solid;
+    background: #CDFEAA;
+}
+  
+a:active {
+    background: #265301;
+    color: #CDFEAA;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.small {
+    font-size: 10px;
+    opacity: 70%;
+}
+
+.bottom {
+    position: absolute;
+    padding-bottom: 4px;
+    text-align: center;
+}
+
+.language {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+}
+
+.language select {
+    text-align: center;
+    width: 130px;
+    height: 40px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.74);
+    border: none;
+    border-radius: 9px;
+}
